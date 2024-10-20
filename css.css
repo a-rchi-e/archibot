@@ -1,0 +1,154 @@
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-image: url("images/mountain-background.jpg");
+    background-size: cover;
+}
+
+#container {
+    size: 100vh;
+}
+
+#logo {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.frame {
+    width: 800px;
+    height: 767px;
+    border-radius: 10px;
+    background-color: rgba(51, 51, 51, 0.7);
+    margin: auto;
+}
+
+#chatbox {
+    display: flex;
+    flex-direction: column;
+    background-color: lightgrey;
+    height: 473px;
+    width: 665px;
+    border-radius: 7px;
+    left: 0;
+    right: 0;
+    top: 173px;
+    margin: auto;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    -ms-overflow-style: none;                  /* lines 42 to 48 were from AI tools. They are to make it possible to scroll on mobile devices and also on all browsers without the scroll bar showing on the side. These are the only group of lines that have been directly copied */   
+    scrollbar-width: none; 
+    -webkit-overflow-scrolling: touch; 
+}
+
+.chat-box::-webkit-scrollbar {
+    display: none; 
+}
+
+
+input {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 3px;
+    text-align: center;
+    background-color: lightgrey;
+    color: black;
+    font-size: 23px;
+    width: 500px;
+    height: 40px;
+    margin-top: 25px;
+}
+
+.user-container {
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-end;
+    border-radius: 2px;
+
+    margin-top: 10px;
+    word-wrap: break-word;
+}
+
+.user-bubble {
+    background-color: orange;
+    color: black;
+    margin-right: 10px;
+    max-width: 70%;
+
+    padding-top: 15px;
+    padding-bottom: 15px;
+    padding-left: 25px;
+    padding-right: 17px;
+
+    border-top-left-radius: 30px;
+    border-bottom-left-radius: 30px;
+    border-top-right-radius: 30px;
+    border-bottom-right-radius: 3px;
+
+    font-size: 17px;
+}
+
+.user-icon {
+    width: 42px;
+    height: 42px;
+    margin-right: 10px;
+}
+
+#line1 {
+    height: 2px;
+    width: 80%;
+    padding: 0;
+    border: 0;
+    border-radius: 2px;
+    background-color: darkgrey;
+    margin-top: 20px;
+}
+
+.user-time {
+    margin-left: 610px;
+    font-size: 11px;
+}
+
+.bot-container {
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    border-radius: 2px;
+
+    margin-top: 10px;
+    margin-left: 10px;
+    word-wrap: break-word;
+}
+
+.bot-time {
+    font-size: 11px;
+    margin-left: 6px;
+}
+
+.bot-bubble {
+    background-color: lightcoral;
+    color: black;
+    margin-left: 10px;
+    max-width: 70%;
+
+    padding-top: 15px;
+    padding-bottom: 15px;
+    padding-left: 25px;
+    padding-right: 17px;
+
+    border-top-left-radius: 30px;
+    border-bottom-left-radius: 3px;
+    border-top-right-radius: 30px;
+    border-bottom-right-radius: 30px;
+
+    font-size: 17px;
+}
+
+.bot-icon {
+    height: 30px;
+    width: 30px;
+}
